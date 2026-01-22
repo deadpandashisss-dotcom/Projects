@@ -1,0 +1,70 @@
+
+.carlist {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+}
+
+/* YATAY KART */
+.car {
+  display: flex;
+  background-color: #161616;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  transition: transform 0.25s ease;
+}
+
+.car:hover {
+  transform: translateY(-4px);
+}
+
+/* FOTO */
+.car img {
+  width: 420px;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* İÇERİK */
+.car-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* BAŞLIK */
+.car-content h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* AÇIKLAMA */
+.car-content p {
+  font-size: 15px;
+  color: #cfcfcf;
+  margin-bottom: 14px;
+  max-width: 800px;
+}
+
+/* ÖZELLİKLER */
+.car-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.car-content ul li {
+  font-size: 14px;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  color: #e0e0e0;
+}
+
+.car-content ul li:last-child {
+  border-bottom: none;
+}
+
+

@@ -1,0 +1,102 @@
+/* ===== ANA ABOUT BLOĞU ===== */
+.information {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.information h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.information p {
+  font-size: 16px;
+  color: #cfd3da;
+  margin-bottom: 14px;
+}
+
+/* ===== BİLDİKLERİM LİSTESİ ===== */
+.information ul {
+  margin-top: 25px;
+  padding-left: 0;
+}
+
+.information h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.information ul li {
+  list-style: none;
+  padding: 8px 0;
+  font-size: 15px;
+  color: #d1d5db;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.information ul li:last-child {
+  border-bottom: none;
+}
+
+/* ===== ORTAK SECTION TASARIMI ===== */
+section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+section h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+section p {
+  font-size: 16px;
+  color: #cfd3da;
+  margin-bottom: 16px;
+}
+
+/* ===== SECTION LİSTELERİ ===== */
+section ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+section ul li {
+  font-size: 15px;
+  padding: 8px 0;
+  color: #e5e7eb;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+section ul li:last-child {
+  border-bottom: none;
+}
+
+/* ===== VURGU (HAFİF RENK) ===== */
+.team-vision h2,
+.team-values h2,
+.team-projects h2,
+.team-business h2 {
+  position: relative;
+}
+
+.team-vision h2::after,
+.team-values h2::after,
+.team-projects h2::after,
+.team-business h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin-top: 8px;
+  background: linear-gradient(90deg, #ff3c3c, #ff9f3c);
+}
+
+
