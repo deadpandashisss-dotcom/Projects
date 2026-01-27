@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header>
+    <div class="left-nav">
+        <img class="logo" src="img/logo.png" alt="logo">
+    </div>
+    <div class="right-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </div>
+
+</header>
+<section id="contact">
+  <div class="contact-container">
+    <h2>İletişim</h2>
+    <p>Bana ulaşmak istiyorsan formu doldur. Dumanla sinyal kabul etmiyorum.</p>
+
+    <form class="contact-form">
+      <div class="input-group">
+        <input type="text"  name="name" required>
+        <label>Name & Surname</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email"  name="email" required>
+        <label>Email</label>
+      </div>
+
+      <div class="input-group">
+        <textarea  name="message" rows="5" required></textarea>
+        <label>Message</label>
+      </div>
+
+      <button type="submit">Semd</button>
+    </form>
+  </div>
+</section>
+
+
+
+
+    <footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-left">
+            <h3>Taha</h3>
+            <p>Frontend Developer<br>HTML • CSS • JavaScript</p>
+        </div>
+
+        <div class="footer-center">
+            <a href="https://github.com/deadpandashisss-dotcom" target="_blank">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="#">
+                <i class="bi bi-discord"></i>
+            </a>
+            <a href="#">
+                <i class="bi bi-envelope"></i>
+            </a>
+        </div>
+
+        <div class="footer-right">
+            <p>© 2026</p>
+            <p>All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+(function(){
+  emailjs.init("1A6nJ5-uhC-qy1XU6");
+})();
+
+document.querySelector(".contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "service_o8zncw6",
+    "template_hrj4j84",
+    this
+  ).then(function() {
+    alert("Mesaj gönderildi 👍");
+  }, function(error) {
+    alert("Hata oldu ❌");
+    console.log(error);
+  });
+});
+</script>
+
+</body>
+</html>
